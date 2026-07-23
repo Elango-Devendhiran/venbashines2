@@ -1,0 +1,224 @@
+/* =========================================================
+   RESPONSIVE STYLES — Venba Shines
+   Mobile | Tablet | Laptop | Desktop
+   ========================================================= */
+
+/* ---------- Large Desktop (≥1400px) ---------- */
+@media (min-width: 1400px){
+  .hero-image-gallery{ height:460px; }
+  .container{ max-width:1320px; }
+}
+
+/* ---------- Desktop / Laptop (≤1199.98px) ---------- */
+@media (max-width: 1199.98px){
+  .section-pad{ padding: 70px 0; }
+  .masonry{ column-count:2; }
+  .hero-image-gallery{ height:380px; }
+}
+
+/* ---------- Tablet Landscape (≤991.98px) ---------- */
+@media (max-width: 991.98px){
+  #mainNav .navbar-collapse{
+    background: var(--navy-deep);
+    margin-top:14px; padding:16px 18px; border-radius: var(--radius-md);
+    position:absolute; right:16px; top:100%;
+    min-width:240px; z-index:100;
+  }
+  #mainNav .navbar-collapse .nav-link-lux{
+    padding:10px 16px !important;
+  }
+  .hero-heading{ font-size: clamp(1.8rem, 5vw, 2.5rem); }
+  #hero{ min-height:auto; padding: 120px 0 70px; }
+  .hero-image-gallery{ height:320px; margin-top:36px; }
+  .hero-badge-float{ display:none; }
+  .about-badge{ position:static; margin-top:-36px; margin-left:16px; display:inline-flex; }
+  .counter-strip{ padding:32px 18px; }
+  .counter-item{ margin-bottom:16px; }
+  .masonry{ column-count:2; }
+  .viz-shell{ padding:24px; }
+  .section-pad{ padding: 60px 0; }
+}
+
+/* ---------- Tablet Portrait (≤767.98px) ---------- */
+@media (max-width: 767.98px){
+  .container{ padding-left:18px; padding-right:18px; }
+  .section-title{ font-size: 1.65rem; }
+  .masonry{ column-count:1; }
+  .contact-info-card, .form-lux{ padding:24px 20px; }
+  .hero-desc{ max-width:100%; }
+  .process-line{ display:none; }
+  .process-step{ margin-bottom:28px; }
+  .stat-chip .num{ font-size:1.8rem; }
+  .viz-tabs{ justify-content:center; }
+  .swatch-row{ justify-content:center; }
+  .viz-actions{ justify-content:center; flex-direction:column; align-items:stretch; }
+  .viz-actions .btn-lux{ width:100%; justify-content:center; }
+  #back-to-top{ right:14px; bottom:74px; width:42px; height:42px; }
+
+  /* Hero image gallery - stack to single column */
+  .hero-image-gallery{
+    grid-template-columns:1fr;
+    grid-template-rows:auto auto auto;
+    height:auto; gap:10px;
+  }
+  .hero-img-main{ grid-column:1; grid-row:1; height:200px; }
+  .hero-img-top{ grid-column:1; grid-row:2; height:160px; }
+  .hero-img-bottom{ grid-column:1; grid-row:3; height:160px; }
+
+  /* WhatsApp float */
+  .whatsapp-float{
+    width:48px; height:48px; font-size:1.4rem;
+    right:14px; bottom:74px;
+  }
+  .whatsapp-tooltip{ display:none; }
+
+  /* News cards */
+  .news-img{ height:170px; }
+
+  /* Product cards */
+  .product-card-img{ height:160px; }
+
+  /* Testimonials */
+  .t-card{ padding:24px 20px; }
+
+  /* Footer */
+  footer{ padding:50px 0 0; }
+}
+
+/* ---------- Mobile (≤575.98px) ---------- */
+@media (max-width: 575.98px){
+  .container{ padding-left:20px; padding-right:20px; }
+  .section-pad{ padding: 48px 0; }
+  .section-title{ font-size: 1.45rem; }
+  .section-sub{ font-size:.9rem; }
+
+  /* Hero */
+  #hero{ padding: 100px 0 50px; }
+  .hero-heading{ font-size: clamp(1.5rem, 6.5vw, 2rem); }
+  .hero-subline{ font-size:.95rem; margin:14px 0 18px; }
+  .hero-desc{ font-size:.88rem; margin-bottom:24px; }
+  .btn-lux{ padding:12px 22px; font-size:.82rem; }
+  .hero-image-gallery{ gap:8px; }
+  .hero-img-main{ height:170px; }
+  .hero-img-top{ height:140px; }
+  .hero-img-bottom{ height:140px; }
+  .scroll-cue{ display:none; }
+
+  /* Navbar */
+  .navbar-brand img{ height:40px; }
+  .brand-text strong{ font-size:1.05rem; }
+  .brand-text span{ font-size:.62rem; letter-spacing:1.5px; }
+  .navbar-toggler{ font-size:1.2rem; padding:6px 10px; }
+
+  /* About */
+  .about-badge{ position:static; margin-top:-24px; margin-left:12px; display:inline-flex; padding:12px 16px; gap:8px; }
+  .about-badge .icon{ width:38px; height:38px; font-size:.95rem; }
+  .about-badge strong{ font-size:1rem; }
+  .about-badge span{ font-size:.7rem; }
+  .timeline-lux{ padding-left:24px; margin-top:24px; }
+  .timeline-item::before{ left:-32px; width:12px; height:12px; }
+  .timeline-item h5{ font-size:.88rem; }
+
+  /* Counter strip */
+  .counter-strip{ padding:24px 14px; margin-top:40px; border-radius:var(--radius-md); }
+  .counter-item .num{ font-size:1.6rem; }
+  .counter-item .lbl{ font-size:.65rem; letter-spacing:.5px; }
+
+  /* MV cards */
+  .mv-card{ padding:22px 18px; }
+
+  /* Why Us */
+  .why-card{ padding:22px 12px; }
+  .why-icon{ width:54px; height:54px; font-size:1.3rem; }
+  .why-card h5{ font-size:.82rem; }
+  .why-card p{ font-size:.75rem; }
+
+  /* Process */
+  .process-num{ width:50px; height:50px; font-size:1rem; }
+  .process-step h5{ font-size:.82rem; }
+  .process-step p{ font-size:.75rem; }
+
+  /* Products */
+  .product-card-inner{ padding:0; }
+  .product-card-img{ height:150px; }
+  .product-card-inner > *:not(.product-card-img){ padding-left:18px; padding-right:18px; }
+  .product-icon{ width:48px; height:48px; font-size:1.1rem; border-radius:12px; margin-bottom:12px; }
+  .product-card-inner h4{ font-size:.95rem; margin-bottom:6px; }
+  .product-card-inner p{ font-size:.82rem; }
+
+  /* Visualizer */
+  .viz-shell{ padding:16px; border-radius:var(--radius-md); }
+  .viz-tabs{ gap:6px; margin-bottom:16px; }
+  .viz-tab{ padding:6px 14px; font-size:.75rem; }
+  .room-stage{ aspect-ratio:16/12; border-radius:var(--radius-sm); }
+  .swatch{ width:28px; height:28px; }
+  .swatch-row{ gap:8px; margin-top:14px; }
+  .viz-info-card{ padding:16px; margin-top:14px; }
+  .viz-info-card h5{ font-size:.88rem; margin-bottom:6px; }
+  .viz-info-card p{ font-size:.8rem; }
+
+  /* WhatsApp float */
+  .whatsapp-float{
+    width:44px; height:44px; font-size:1.25rem;
+    right:12px; bottom:68px;
+  }
+
+  /* Contact form */
+  .form-lux{ padding:20px 16px; }
+  .form-lux label{ font-size:.72rem; }
+  .form-lux .form-control{ padding:8px 2px; font-size:.88rem; }
+
+  /* News */
+  .news-body{ padding:16px 14px; }
+  .news-body h4{ font-size:.92rem; }
+  .news-img{ height:150px; }
+  .news-link{ font-size:.78rem; margin-top:10px; }
+
+  /* Showcase masonry */
+  .masonry{ gap:12px; }
+  .masonry-item{ border-radius:var(--radius-sm); margin-bottom:12px; }
+
+  /* Eyebrow */
+  .eyebrow{ font-size:.68rem; letter-spacing:2px; }
+
+  /* Footer */
+  footer{ padding:40px 0 0; }
+  .footer-col{ margin-bottom:24px; }
+  .footer-col h6{ font-size:.78rem; margin-bottom:12px; }
+  .footer-col ul li{ margin-bottom:8px; }
+  .footer-col ul li a{ font-size:.82rem; }
+  .footer-brand img{ height:36px; margin-bottom:10px; }
+  .footer-social a{ width:32px; height:32px; font-size:.82rem; }
+  .footer-bottom{ font-size:.72rem; padding:16px 0; margin-top:28px; }
+}
+
+/* ---------- Very Small Mobile (≤400px) ---------- */
+@media (max-width: 400px){
+  .hero-image-gallery{ gap:6px; }
+  .hero-img-main{ height:140px; }
+  .hero-img-top{ height:120px; }
+  .hero-img-bottom{ height:120px; }
+  .whatsapp-float{ width:40px; height:40px; font-size:1.1rem; right:10px; bottom:62px; }
+  #back-to-top{ width:36px; height:36px; right:10px; bottom:62px; font-size:.8rem; }
+  .section-pad{ padding:40px 0; }
+  .section-title{ font-size:1.3rem; }
+  .counter-strip{ padding:20px 12px; }
+  .counter-item .num{ font-size:1.4rem; }
+  .counter-item .lbl{ font-size:.6rem; }
+}
+
+/* ---------- Touch device adjustments ---------- */
+@media (hover:none){
+  .hero-img-overlay{ opacity:1; }
+  .hero-img-card:hover img{ transform:none; }
+  .whatsapp-float:hover{ transform:none; }
+  .whatsapp-float:hover .whatsapp-tooltip{ opacity:0; visibility:hidden; }
+}
+
+/* ---------- Print ---------- */
+@media print{
+  #mainNav, .whatsapp-float, #back-to-top,
+  #scroll-progress, #cursor-glow, #custom-cursor, .scroll-cue,
+  #loading-screen{ display:none !important; }
+  .section-pad{ padding:24px 0; }
+}
