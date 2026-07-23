@@ -180,7 +180,7 @@ p{ margin:0; color: var(--ink-soft); line-height:1.75; }
   transition: opacity .7s ease, visibility .7s ease;
 }
 #loading-screen.hide{ opacity:0; visibility:hidden; }
-.loader-logo{ width:72px; height:72px; animation: floatY 2.4s ease-in-out infinite; filter: drop-shadow(0 10px 25px rgba(245,124,32,.5)); }
+.loader-logo{ width:250px; height:250px; animation: floatY 2.4s ease-in-out infinite; filter: drop-shadow(0 10px 25px rgba(245,124,32,.5)); }
 .loader-bar{ width:200px; height:3px; background:rgba(255,255,255,.15); border-radius:3px; overflow:hidden; }
 .loader-bar span{ display:block; height:100%; width:0%; background: var(--grad-rainbow); animation: loadFill 1.6s var(--ease-lux) forwards; }
 @keyframes loadFill{ to{ width:100%; } }
@@ -236,8 +236,8 @@ p{ margin:0; color: var(--ink-soft); line-height:1.75; }
   box-shadow: 0 6px 20px rgba(0,0,0,.2);
 }
 .navbar-brand{ display:flex; align-items:center; gap:10px; }
-.navbar-brand img{ height:40px; width:auto; transition: height .4s ease; }
-#mainNav.scrolled .navbar-brand img{ height:34px; }
+.navbar-brand img{ height:130px; width:auto; transition: height .4s ease; }
+#mainNav.scrolled .navbar-brand img{ height:90px; }
 .brand-text{ display:flex; flex-direction:column; line-height:1.05; }
 .brand-text strong{ font-family: var(--font-display); color:#fff; font-size:1.05rem; letter-spacing:.5px; }
 .brand-text span{ font-family: var(--font-head); color: var(--accent-yellow); font-size:.58rem; letter-spacing:2.5px; text-transform:uppercase; }
@@ -276,6 +276,7 @@ p{ margin:0; color: var(--ink-soft); line-height:1.75; }
   background: var(--grad-navy);
   overflow:hidden;
   padding-top: 90px;
+  padding-bottom: 30px;
 }
 .hero-bg-glow{
   position:absolute; inset:0;
@@ -574,7 +575,7 @@ p{ margin:0; color: var(--ink-soft); line-height:1.75; }
 footer{ background: var(--navy-deep); color: rgba(255,255,255,.65); padding:60px 0 0; position:relative; overflow:hidden; }
 footer::before{ content:""; position:absolute; inset:0; background: var(--grad-glow); opacity:.4; }
 .footer-col{ position:relative; z-index:2; }
-.footer-brand img{ height:42px; margin-bottom:14px; }
+.footer-brand img{ height:200px; }
 .footer-col h6{ color:#F4EBD0; font-family: var(--font-head); letter-spacing:1px; text-transform:uppercase; font-size:.82rem; margin-bottom:16px; }
 .footer-col ul li{ margin-bottom:10px; }
 .footer-col ul li a{ color: rgba(255,255,255,.6); font-size:.88rem; transition: all .3s ease; }
