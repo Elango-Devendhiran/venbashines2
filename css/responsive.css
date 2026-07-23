@@ -187,7 +187,8 @@
   .footer-col h6{ font-size:.78rem; margin-bottom:12px; }
   .footer-col ul li{ margin-bottom:8px; }
   .footer-col ul li a{ font-size:.82rem; }
-  .footer-brand img{ height:36px; margin-bottom:10px; }
+  .footer-brand img{ height:150px; }
+  .footer-social { padding-left: 20px !important; }
   .footer-social a{ width:32px; height:32px; font-size:.82rem; }
   .footer-bottom{ font-size:.72rem; padding:16px 0; margin-top:28px; }
 }
