@@ -106,6 +106,28 @@
         }
       });
     });
+
+    // Toggle hamburger to X and close on outside click
+    const collapseEl = document.getElementById("navMenu");
+    const togglerIcon = document.querySelector(".navbar-toggler i");
+    if (collapseEl && togglerIcon) {
+      collapseEl.addEventListener('show.bs.collapse', function () {
+        togglerIcon.classList.remove('fa-bars');
+        togglerIcon.classList.add('fa-xmark');
+      });
+      collapseEl.addEventListener('hide.bs.collapse', function () {
+        togglerIcon.classList.remove('fa-xmark');
+        togglerIcon.classList.add('fa-bars');
+      });
+    }
+
+    document.addEventListener("click", function (e) {
+      if (collapseEl && collapseEl.classList.contains("show")) {
+        if (!collapseEl.contains(e.target) && !e.target.closest('.navbar-toggler')) {
+          new bootstrap.Collapse(collapseEl).hide();
+        }
+      }
+    });
   }
 
   /* ---------------- Active Nav Link on Scroll ---------------- */
