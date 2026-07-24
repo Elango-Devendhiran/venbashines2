@@ -84,7 +84,7 @@ a{ text-decoration:none; color:inherit; }
 ul{ list-style:none; margin:0; padding:0; }
 button{ font-family:inherit; cursor:pointer; }
 h1,h2,h3,h4,h5{ font-family: var(--font-head); margin:0; color: var(--navy); }
-[data-theme="dark"] h1,[data-theme="dark"] h2,[data-theme="dark"] h3,[data-theme="dark"] h4{ color:#F4EBD0; }
+[data-theme="dark"] h1,[data-theme="dark"] h2,[data-theme="dark"] h3,[data-theme="dark"] h4,[data-theme="dark"] h5{ color:#F4EBD0; }
 p{ margin:0; color: var(--ink-soft); line-height:1.75; }
 .section-pad{ padding: 80px 0; }
 .container{ max-width:1200px; }
@@ -157,7 +157,7 @@ p{ margin:0; color: var(--ink-soft); line-height:1.75; }
 .btn-gold:hover{ box-shadow: 0 16px 36px -6px rgba(245,124,32,.5); }
 .btn-outline-lux{
   background: transparent;
-  color: var(--white);
+  color: #fff;
   border: 1.5px solid rgba(255,255,255,.5);
   backdrop-filter: blur(6px);
 }
@@ -232,12 +232,12 @@ p{ margin:0; color: var(--ink-soft); line-height:1.75; }
 #mainNav.scrolled{
   background: rgba(26,35,50,0.95);
   backdrop-filter: blur(14px);
-  padding: 10px 0;
+  padding: 5px 0;
   box-shadow: 0 6px 20px rgba(0,0,0,.2);
 }
 .navbar-brand{ display:flex; align-items:center; gap:10px; }
-.navbar-brand img{ height:130px; width:auto; transition: height .4s ease; }
-#mainNav.scrolled .navbar-brand img{ height:90px; }
+.navbar-brand img{ height:80px; width:auto; transition: all .4s ease; margin-bottom: 0; margin-top: 0; z-index: 10; position: relative; }
+#mainNav.scrolled .navbar-brand img{ height:70px; margin-bottom: 0; margin-top: 0; }
 .brand-text{ display:flex; flex-direction:column; line-height:1.05; }
 .brand-text strong{ font-family: var(--font-display); color:#fff; font-size:1.05rem; letter-spacing:.5px; }
 .brand-text span{ font-family: var(--font-head); color: var(--accent-yellow); font-size:.58rem; letter-spacing:2.5px; text-transform:uppercase; }
@@ -275,7 +275,7 @@ p{ margin:0; color: var(--ink-soft); line-height:1.75; }
   display:flex; align-items:center;
   background: var(--grad-navy);
   overflow:hidden;
-  padding-top: 90px;
+  padding-top: 130px;
   padding-bottom: 30px;
 }
 .hero-bg-glow{
@@ -476,7 +476,7 @@ p{ margin:0; color: var(--ink-soft); line-height:1.75; }
 .product-tag{ display:inline-block; margin-top:5px; margin-bottom: 15px;font-size:.7rem; letter-spacing:1.5px; text-transform:uppercase; font-family:var(--font-head); color: var(--primary); font-weight:600; }
 
 /* ---------- Why Us ---------- */
-#whyus{ background:#fff; }
+#whyus{ background: var(--white); }
 .why-card{ text-align:center; padding:30px 16px; border-radius: var(--radius-md); transition: all .4s var(--ease-lux); height:100%; }
 .why-card:hover{ background: var(--grey-light); transform: translateY(-5px); }
 .why-icon{
@@ -513,7 +513,7 @@ p{ margin:0; color: var(--ink-soft); line-height:1.75; }
 .process-step p{ color: rgba(255,255,255,.6); font-size:.8rem; }
 
 /* ---------- Showcase / Masonry ---------- */
-#showcase{ background:#fff; }
+#showcase{ background: var(--white); }
 .masonry{ column-count:3; column-gap:16px; }
 .masonry-item{ break-inside: avoid; margin-bottom:16px; border-radius: var(--radius-md); overflow:hidden; position:relative; box-shadow: var(--shadow-soft); }
 .masonry-item img{ width:100%; display:block; transition: transform .6s var(--ease-lux); }
@@ -546,7 +546,7 @@ p{ margin:0; color: var(--ink-soft); line-height:1.75; }
 .swiper-pagination-bullet-active{ opacity:1; background: var(--primary); }
 
 /* ---------- Contact ---------- */
-#contact{ background:#fff; }
+#contact{ background: var(--white); }
 .contact-info-card{
   background: var(--grad-navy); border-radius: var(--radius-lg); padding:36px 28px; color:#fff;
   height:100%; position:relative; overflow:hidden;
@@ -565,6 +565,9 @@ p{ margin:0; color: var(--ink-soft); line-height:1.75; }
 .form-lux .form-control{
   border:none; border-bottom:2px solid rgba(0,0,0,.1); border-radius:0; background:transparent;
   padding:10px 4px; font-family: var(--font-body); color: var(--ink);
+}
+[data-theme="dark"] .form-lux .form-control{
+  border-bottom-color: rgba(255,255,255,.15);
 }
 .form-lux .form-control:focus{ box-shadow:none; border-color: var(--primary); }
 .form-lux label{ font-family: var(--font-head); font-size:.78rem; letter-spacing:.5px; color: var(--ink-soft); margin-bottom:5px; }
@@ -734,3 +737,5 @@ footer::before{ content:""; position:absolute; inset:0; background: var(--grad-g
   transition: all .3s ease;
 }
 .news-link:hover{ color:var(--primary-deep); gap:10px; }
+
+.bg-theme-white { background: var(--white) !important; }
