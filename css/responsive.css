@@ -20,8 +20,8 @@
 @media (max-width: 991.98px){
   #mainNav .navbar-collapse{
     background: var(--navy-deep);
-    margin-top:14px; padding:16px 18px; border-radius: var(--radius-md);
-    position:absolute; right:16px; top:100%;
+    margin-top:0; padding:16px 18px; border-radius: var(--radius-md);
+    position:absolute; right:16px; top:80px;
     min-width:240px; z-index:100;
   }
   #mainNav .navbar-collapse .nav-link-lux{
